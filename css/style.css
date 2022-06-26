@@ -1,0 +1,126 @@
+:root {
+  --ff-main: "Outfit";
+  --default-l-h: 1.5; /* line-height */
+
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-black: hsl(199, 58%, 7%);
+  --clr-blue: hsl(217, 89%, 36%);
+  --clr-gray:hsl(216, 2%, 57%);
+}
+
+html {
+  font-size: 62.5%; /* now 1 rem = 10px by default its 16px */
+}
+
+body{
+  font-family: var(--ff-main);
+  margin-inline: auto;
+  line-height: var(--default-l-h);
+  padding-inline: 1.2rem;
+  height: 100vh;
+  font-size: 1.6rem;
+}
+
+.card{
+  max-width: 330px;
+  background-color: white;
+  border-radius: 1rem;
+}
+.card-top{
+  position:relative;
+  text-align: center;
+  background-color: var(--clr-blue);
+  color: white;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
+
+.insight{
+  font-size: 11px;
+  color: var(--clr-gray);
+  margin-left: 0.8rem;
+  padding: 1rem;
+}
+.card-bottom{
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px
+}
+
+.bar{
+  border:none;
+  border: 1px solid transparent;
+  display: inline-block;
+  border-radius: 0.2rem;
+  font-size: 1rem;
+  white-space: nowrap;
+  line-height: var(--default-l-h);
+  vertical-align: middle;
+  user-select: none; 
+  padding: 0.37rem 0.75rem;
+  transition: color .15s ease-in-out,background-color .15s 
+  ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+ 
+}
+.input{
+  background-color:#DCDCDC; /**/
+  opacity: 1;
+  padding-top: 5px auto 5px 5px;
+  color: #D3D3D3;
+  margin-left: 1px;
+  border: 1px solid var(--clr-gray);
+}
+
+input::placeholder{
+  font-size: 14px;
+  } 
+
+.btn{
+  color: white;
+  background-color: #007bff;
+  border-color: #007bff;
+  font-size: 14px;
+}
+
+.description{
+  color: gray;
+  font-size: 12px;
+}
+
+.review{ 
+  padding: 1rem;
+}
+
+.name{
+  font-family: var(--ff-main);
+  font-weight: 400;
+  font-size: 12px;
+}
+.avatar{
+  margin-top: 14px;
+}
+.flex-child {
+  flex-direction: column;
+}
+
+/*Utitlity Classes! */ 
+
+.flex{ display: flex;}
+.center{ place-items: center;}
+.justify-between { justify-content: space-between;}
+.justify-center { justify-content: center;}
+.grid{ display: grid;}
+.spacing-x-1 { gap: 0.5rem; }
+.spacing{ padding: 2rem;}
+.spacing-low { padding: 1rem ; }
+.item-center { align-items: center;}
+.center,.grid{ display: grid; }
+.text-center { text-align: center;}
+.text-left { text-align: left;}
